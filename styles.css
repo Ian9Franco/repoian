@@ -171,12 +171,127 @@ hr {
   width: 100%;
   height: 350px;
   background: url("./img/dota-2-banner2.png") no-repeat center center/cover;
+  margin-bottom: 40px;
 }
 
 .cards-banner-two .content {
-  width: 50%;
-  padding: 100px 0 0 30px;
+  width: 40%;
+  padding: 90px 0 0 30px;
 }
+#menu a, button{
+  font-size: 18px !important;
+  font-weight: 600;
+ 
+}
+
+#menu a{
+  color:#3f3f3f;
+  
+}
+/*===================SLIDER DE IMAGENES==========================*/
+
+.carousel-inner {
+ max-height:39rem !important;
+}
+
+/*===================EQUIPO IMAGEN==========================*/
+
+
+
+#img-equipo{
+ max-height:30rem !important;
+ width:50%;
+}
+
+
+/*===================SECCION NUESTRO EQUIPO ESTADIO==========================*/
+#local {
+ margin-top:50px;
+ background-color: #f3f3f3;
+ display:flex;
+ justify-content: center; 
+ padding-bottom: 300px; 
+}
+
+.mapa {
+ background: url(../img/compendium.gif);
+ width:100%;
+ height:500px;
+ background-repeat: no-repeat;
+ 
+}
+
+
+.wrapper-local {
+ width:50%;
+ margin-left:100px;
+ padding-top:150px;
+}
+
+
+/*=============================================================*/
+#numeros-local{
+ margin:0 !important;
+ padding:0 !important;
+}
+#numeros-local div {
+ padding: 0 20px 0 0;   
+ text-align:left;
+ height:48px;
+}
+
+#numeros-local div:not(:last-child) {
+ border-right: 2px solid #3f3f3f;
+}
+#numeros-local div:not(:first-child) {
+ padding-left:20px;
+}
+
+#numeros-local p{
+ margin:0;
+}
+
+/*=========================CONTACTOS BACKGROUND================================*/
+
+#bg-contactos{
+ position:relative;
+ top: -130px;
+} 
+
+#seccion-contacto{
+ background-color: #1b2a4e;
+ min-height:500px;
+ position:relative;
+}
+
+/*=========================CONTACTOS FORMULARIO================================*/
+
+#contenedor-formulario{
+ position:absolute;
+ top:30%;
+ left:50%;
+ transform: translate(-50%, -50%);
+ background: #fbfafa;
+ border-radius:5px;
+ 
+}
+
+#titulo-formulario {
+ color: #3f3f3f;
+}
+
+article img{
+  max-height: 50%;
+  max-width: 50%;
+}
+article p{
+  text-align: left;
+}
+
+
+
+
+/*=========================FOOTER================================*/
 
 /* Follow */
 .social {
@@ -233,14 +348,97 @@ hr {
   text-align: center;
   font-size: 1rem;
   padding-bottom: 20px;
+}#f{
+  background: #1b2a4e;
+  min-height: 100px;;
 }
+footer p{
+  color:#f3f3f3;
+  text-align:center;
+}
+#iconos  i {
+  font-size: 26px;
+  padding: 0 8px;
+  color:#f3f3f3;
+}
+p .fs-5 text-body{
+  text-align: center;
+}
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
 
-/* Mobil */
-@media (max-width: 700px) {
+@media (max-width:1200px){
+  #intro, #equipo {
+      width:90% !important;
+      margin:auto;
+  }
+
+  #local {
+      flex-wrap: wrap;
+      padding-top:30px;
+ }
+ .wrapper-local {
+  width:90%;
+  margin:auto;
+  padding-top:50px;    
+ }
+
+}
+/*=========================MEDIA QUERIES PANTALLA PEQUELÑA================================*/
+
+
+@media (max-width:768px) {
+
+  #intro, #equipo{
+      width:90% !important;
+      margin:auto;
+  }
+
+  
+  #img-equipo{
+      max-height:20rem !important;
+      width:90%;
+  }
+  .wrapper-local {
+      width:90%;
+      margin:auto;
+      padding-top:50px;    
+  }
+  #local {
+      flex-wrap: wrap;
+  }
+  .mapa img {
+      width:100%;
+      height:auto;
+  }
+  #bg-contactos{
+      top: -120px;
+  }
+
+
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-PEQUEÑA================================*/
+
+@media (max-width: 576px) {
+  #servicios-fila-2 {
+      width:100% !important;
+  }
+  #servicios-fila-1 {
+      width:100% !important;
+  }
+
+  .icono-wrap{
+      flex-wrap:wrap !important;
+      justify-content: center !important;
+      text-align: center;
+  }
+}
+ 
+ @media  (max-width: 700px) {
   .menu-btn {
     display: block;
     grid-area: auto;
-  }
+  } 
+
 
   .menu-btn:hover {
     opacity: 0.5;
@@ -290,7 +488,7 @@ hr {
   .footer-links .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+
   .cards-banner-one .content,
   .cards-banner-two .content {
     width: 100%;
@@ -334,12 +532,5 @@ main article:hover{
 
 .grid-container img {
   width: 100%;
-  height: 50%;
-}
-article img{
-  max-height: 100%;
-  max-width: 100%;
-}
-article p{
-  text-align: left;
+  height: 100%;
 }

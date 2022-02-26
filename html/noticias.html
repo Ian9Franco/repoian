@@ -1,143 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="../styles.css">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+
     <title>Noticias</title>
-    
-</head>
-<body >
-    <header id="noticias">
-        <div class="menu-btn">
-            <i class="fas fa-bars fa-2x"></i>
+  </head>
+  <body>
+  <!--========================================================== -->
+                        <!-- ENCABEZADO -->
+  <!--========================================================== -->
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">Powered by -ian franco</p>
+    </header>
+
+    <nav  class="navbar navbar-expand-lg navbar-light p-3"  id="menu">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+              <span class="fs-5 text-primary fw-bold">Dota 2</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="heroes.html">HEROES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Noticias.html">NOTICIAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="E-sports.html">E-SPORTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">CONTACTO</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="Suscribete">
+              <button class="btn btn-primary btn-primary-outline-success" type="button">Inicia Sesion</button>
+            </form>
           </div>
+
+        </div>
+      </nav>
+
+    
+    
+      <!-- SLIDER DE IMAGENES-->
+    
+   
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="../img/dota-2-banner.jpg" class="d-block w-100" alt="">
+          </div>
+          
+ 
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="../img/dota-2-banner2.png" class="d-block w-100" alt="...">
+          </div>
+          
+          
+          <!-- 
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./img/banner5.jpg" class="d-block w-100" alt="...">
+          </div> -->
+ 
+ 
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>    
+    
         
-          <div class="container">
-            <!-- Navigation -->
-            <nav class="nav-main">
-              <!-- Brand -->
-              <img src="../img/Dota-2-Logo.png" alt="logo" class="nav-brand">
-              <!-- Left Nav -->
-              <ul class="nav-menu">
-                <li>
-                  <a href="../index.html">DOTA 2</a>
-                </li>
-                <li>
-                  <a href="#">HEROES</a>
-                </li>
-                <li>
-                  <a href="#">NOTICIAS</a>
-                </li>
-                <li>
-                  <a href="#">E-SPORTS</a>
-                </li>
-              </ul>
-        <div class="notcias">
-           
+     
+    <!--========================================================== -->
+                        <!-- INTRODUCCION DE SERVICIOS-->
+    <!--========================================================== -->
+
+
+    <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3">«"forma suprema del MOBA que todos los demás que trabajan en el género intentan capturar como un rayo en una botella"» <span class="text-primary">-Rich McCormick<span/></h1>
+     <p class="p-3  fs-4">
+         <span class="text-primary">Dota 2</span> es un videojuego perteneciente al género de Arena de batalla en línea ARTS, también conocido como MOBA, lanzado el 9 de julio del año 2013.       
+     </p>   
+    </section>
+
+   <!--========================================================== -->
+                        <!-- TIPOS DE SERVICIOS-->
+    <!--========================================================== -->
+
+
+<section class="w-100">
+    <div class="row w-75 mx-auto" id="servicios-fila-1">       
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="../img/valve.jpg" alt="desarrollo"   width="180" height="160">
+
+        <div>
+            <h3 class="fs-5 mt-4 px-4 pb-1">Desarrollo</h3>
+            <p class="px-4"> El juego fue desarrollado por la empresa Valve Corporation</p>
         </div>
 
-        
-    </header>
-    <main class="grid-container">
-        <main>
-            <article >
-                <img src="../img/aga.png">
-                <h3>Votación del Alijo del Coleccionista en el pase de batalla
-                </h3>
-                 <p>Gracias a la alta calidad de los artículos presentados en el Workshop de Dota 2, 
-                     tenemos una amplia selección lista para celebrar el retorno de Aghanim con un nuevo Alijo del Coleccionista. 
-                     Aunque Aghanim prefería presentar sus propios resultados como definitivos,
-                      convencimos a su eminencia para invitar a todos los poseedores del pase de batalla a participar en el proceso y ayudar a hacer la selección final.
+    </div>
 
-                  </p>
-                     
-            </article>
+    <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+        <img src="../img/ancient.png" alt="ancient" width="180" height="160">
+
+        <div>
+            <h3 class="fs-5 mt-4 px-4 pb-1 icono-wrap">Ancestro</h3>
+            <p class="px-4">Una partida de Dota 2, cuenta con una fortaleza para cada una de las dos facciones opuestas, Los Dire y Los Radiant , que contienen una estructura principal a la que se le denomina como Ancestro.</p>
+        </div>
+    </div>   
+</div>
+
+<div class="row w-75 mx-auto mb-5" id="servicios-fila-2">       
+    <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+        <img src="../img/esports.jpg" alt="esports" width="180" height="160">
+
+        <div>
+            <h3 class="fs-5 mt-4 px-4 pb-1">Equipo</h3>
+            <p class="px-4">Los dos equipos, generalmente integrados por cinco jugadores cada uno, se enfrentan entre sí como los defensores de sus respectivos Ancestros.</p>
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="../img/images.jpg" alt="heroes" width="180" height="160" >
+
+        <div>
+            <h3 class="fs-5 mt-4 px-4 pb-1">Heroes</h3>
+            <p class="px-4">Actualmente, hay 122 "Héroes" en Dota 2. Los héroes son poderosos unidades controladas por el jugador con habilidades especiales y únicas. Aunque muchos héroes tienen roles similares a otros, cada uno otorga diferentes ventajas y limitaciones al equipo. </p>
+        </div>
+    </div>   
+        </div>   
+    </div>
+</section>
+
+<!--========================================================== -->
+                        <!-- SECCION ACERCA DE NOSOTROS-->
+<!--========================================================== -->
+
+<section>
     
-            <article>
-                <img src="../img/marci.png">
-                <h3>Marci se une a la lucha
-                </h3>
-                 <p>Hoy Marci avanza poderosa desde DOTA: Sangre de dragón hasta la batalla de los Ancestros,
-                      convirtiéndose en la más reciente heroína que se une a la lucha, para probar que la lealtad eterna genera un poder sin rival.
-                        Marci entra en la batalla lista para levantar sus puños y defender a sus compañeros.
-                         Ve a la página de actualización de Marci para saber más sobre sus habilidades y otros detalles.
-                  </p>
-                 
+
+    <div id="local" class="border-top">
+        <div class="mapa"> </div>
+        <div>
             
-            </article>
-    
-            <article>
-                <img src="../img/esta.png">
-                <h3>Finales regionales del tour de invierno del CPD 2021-2022
-                </h3>
-                 <p>Hace poco más de una semana, anunciamos la cancelación del primer Major de la temporada 2021-2022 del CPD.
-                      En ese momento, no presentamos una solución alternativa que resolviera la ausencia de premios y de puntos del CPD. 
-                  </p>
-            </article>
+        </div>
+    </div>
+
+</section>
 
 
-         
-    
-            <article>
-                <img src="../img/rebajas.jpg">
-                <h3>Actualización de Dota Plus: Invierno 2022
-                </h3>
-                 <p>La actualización de hoy incluye el nuevo Tesoro de Fantasía del Linaje del tour de invierno,
-                  que sirve como reconocimiento a la excelencia estratégica en la liga Fantasía del tour de invierno del CPD 2021-2022.
-                  </p>
-            </article>
-    
-            <article>
-                <img src="../img/chaos.png">
-                <h3>Actualización de Dota Plus: Invierno 2021
-                </h3>
-                 <p>Los días son más cortos y los vientos más fríos, 
-                     pero en las sendas la acción no se detiene y ya tenemos una nueva actualización de temporada de Dota Plus que nos ayude a superar esas noches tempestuosas.
-                      Además de un nuevo tesoro estacional y misiones y recompensas de clan renovadas,
-                       esta actualización incluye también un lote de música heavy metal nuevo que quita todas las penas invernales.
+<!--========================================================== -->
+                        <!-- SECCION CONTACTOS-->
+<!--========================================================== -->
 
-                  </p>
-            </article>
-    
-            <article>
-                <img src="../img/invie.png">
-                <h3>Tour de invierno 2022 del CPD
-                </h3>
-                 <p>Ha pasado más de un mes desde la coronación de los vigentes campeones, y es hora de mirar hacia los próximos espectáculos que nos esperan.
-                  </p>
-            </article>
-    
-    
-        </main>
+<section id="seccion-contacto" class="border-bottom border-secondary border-2">
+  <div id="bg-contactos">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1b2a4e" fill-opacity="1" d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+  </div>
 
 
-    </main>
-    
-    <footer>
-    
-         <!-- Footer Links -->
-       <div class="footer-links">
-       <div class="footer-container">
-        
-      
-       </div>
-       </div>
-
-       <!-- Footer -->
-       <footer class="footer">
-         <h3>Collada Pontorno Ian Franco Copyright</h3>
-  </footer>
-    </footer>
+<!--========================================================== -->
+                      <!-- CONTENEDOR DEL FORMULARIO -->
+<!--========================================================== -->
 
 
-    
-</body>
+</section>
+
+
+<!--========================================================== -->
+                        <!--FOOTER-->
+<!--========================================================== -->
+
+
+<footer id="f" class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+  <p class="fs-5 px-3  pt-3">Ian Franco &copy; Todos Los Derechos Reservados 2022</p>
+  <div id="iconos" >
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>  
+  </div>
+</footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
